@@ -1,0 +1,32 @@
+Multi-Modal N-Back EEG Marker Key
+
+r2 Block start/end markers:
+Block_Start 					100
+Block_End 						200
+
+r3+:
+Block_Start						100 +
+Block_End							200
+	(letters)						10
+	(locations)					20
+	(both)							30
+	
+	(1-back)						1
+	(2-back)						2
+	(3-back)						3
+	(n-back)						n...
+	
+ex:
+Block_Start_letters_2_back = 112
+Block_End_letters_2_back = 212
+
+Loading Trial Stim 		10
+Negative Trial Stim 	11
+Positive Trial Stim 	12
+
+Response Timeout			20
+Negative Response			21
+Positive Response			22
+Invalid Response			23
+
+
