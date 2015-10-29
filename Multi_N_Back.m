@@ -1,11 +1,13 @@
 function data = Multi_N_Back(subID,mode,numBack,practice)
-    RandStream.setDefaultStream(RandStream('mt19937ar','seed',sum(100*clock)));
+    RandStream.setGlobalStream(RandStream('mt19937ar','seed',sum(100*clock)));
     
     AssertOpenGL;
     
     if(~exist('practice','var') || isempty(practice))
         practice = false;
     end
+    
+    Screen('Preference', 'SkipSyncTests', 1); 
     
     D_BACKGROUND_COLOR = [128, 128, 128]; % Gray
     D_TEXT_COLOR = [255, 255, 255]; % White
